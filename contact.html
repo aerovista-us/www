@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bookings · World’s Worst DJ</title>
+  <meta name="description" content="Book the World’s Worst DJ. Event type, date, vibe, and gear needs." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark">WWDJ</span>
+        <span class="brand__text"><strong>World’s Worst DJ</strong><em>low skill · high confidence</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./shows.html">Shows</a>
+        <a class="nav__link" href="./media.html">Media</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link nav__cta is-active" href="./contact.html">Book me</a>
+      </nav>
+      <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="iconbtn__bars"></span>
+      </button>
+    </div>
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="wrap mobileNav__inner">
+        <a href="./index.html">Home</a>
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./about.html">About</a>
+        <a class="pill" href="./contact.html">Book me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="section__head">
+      <h1>Bookings</h1>
+      <p>
+        This form is set up to copy your request into an email automatically.
+        Works great on phones — no backend needed.
+      </p>
+    </div>
+
+    <div class="grid2">
+      <section class="card">
+        <h2>Request a booking</h2>
+        <form id="bookingForm" class="formstack">
+          <div class="row2">
+            <label>
+              Name
+              <input name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required placeholder="you@domain.com" />
+            </label>
+          </div>
+
+          <div class="row2">
+            <label>
+              Event date
+              <input name="date" type="date" required />
+            </label>
+            <label>
+              Event type
+              <select name="type" required>
+                <option value="">Select…</option>
+                <option>Club night</option>
+                <option>House party</option>
+                <option>Wedding</option>
+                <option>Corporate</option>
+                <option>Festival</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Location / venue
+            <input name="location" placeholder="City + venue name" />
+          </label>
+
+          <label>
+            Vibe / genres
+            <input name="vibe" placeholder="hip-hop, trap, edm, throwbacks…" />
+          </label>
+
+          <label>
+            Notes (gear, set length, do-not-play list)
+            <textarea name="notes" rows="5" placeholder="Anything I should know?"></textarea>
+          </label>
+
+          <div class="row2">
+            <button class="btn btn--primary" type="submit">Generate email</button>
+            <button class="btn btn--ghost" type="button" id="copyRequest">Copy request</button>
+          </div>
+
+          <p class="tiny">
+            Want a real form submit? Add Formspree/Netlify Forms later — I can wire it fast.
+          </p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Direct contact</h2>
+        <div class="contact">
+          <div>
+            <strong>Email</strong>
+            <p><a class="link" href="#" data-disabled>bookings@yourdomain.com</a></p>
+            <p class="tiny">Replace this with your real address in <code>assets/app.js</code>.</p>
+          </div>
+          <div>
+            <strong>Social</strong>
+            <p class="tiny">Add links when ready. Right now they show a clean “not connected” toast.</p>
+            <div class="footer__social" style="justify-content:flex-start">
+              <a class="pill" href="#" data-disabled>Instagram</a>
+              <a class="pill" href="#" data-disabled>SoundCloud</a>
+              <a class="pill" href="#" data-disabled>YouTube</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <strong>Booking rule:</strong> If you want “perfect,” I’m not your DJ.
+            If you want “legendary,” we’re in business.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <strong class="footer__brand">World’s Worst DJ</strong>
+        <p class="tiny">© <span id="year"></span> · Made with questionable taste.</p>
+      </div>
+      <div class="footer__links">
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./contact.html">Bookings</a>
+      </div>
+      <div class="footer__social">
+        <a class="pill" href="#" data-disabled>Instagram</a>
+        <a class="pill" href="#" data-disabled>SoundCloud</a>
+        <a class="pill" href="#" data-disabled>YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

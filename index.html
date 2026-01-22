@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World’s Worst DJ</title>
+  <meta name="description" content="World’s Worst DJ — low skill, high confidence. Bookings, shows, media, and questionable mixes." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <meta name="theme-color" content="#0b0b10" />
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html" aria-label="World’s Worst DJ home">
+        <span class="brand__mark" aria-hidden="true">WWDJ</span>
+        <span class="brand__text">
+          <strong>World’s Worst DJ</strong>
+          <em>low skill · high confidence</em>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link is-active" href="./index.html">Home</a>
+        <a class="nav__link" href="./shows.html">Shows</a>
+        <a class="nav__link" href="./media.html">Media</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link nav__cta" href="./contact.html">Book me</a>
+      </nav>
+
+      <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="iconbtn__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="wrap mobileNav__inner">
+        <a href="./index.html">Home</a>
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./about.html">About</a>
+        <a class="pill" href="./contact.html">Book me</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <div class="kicker">
+            <span class="dot"></span>
+            <span>Now “ruining” dance floors worldwide</span>
+          </div>
+
+          <h1>
+            The <span class="glow">World’s Worst DJ</span><br/>
+            you can’t stop watching.
+          </h1>
+
+          <p class="lead">
+            Mixing like a blender with trust issues. If you want a perfect set… hire literally anyone else.
+            If you want a night people will talk about forever? Yeah. That’s me.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="./contact.html">
+              Book the chaos
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--ghost" href="./media.html">
+              Hear the crimes
+              <span aria-hidden="true">↯</span>
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong id="stat1">0</strong>
+              <span>transitions survived</span>
+            </div>
+            <div class="stat">
+              <strong id="stat2">0</strong>
+              <span>times booed (lovingly)</span>
+            </div>
+            <div class="stat">
+              <strong id="stat3">0</strong>
+              <span>requests ignored</span>
+            </div>
+          </div>
+
+          <div class="notice">
+            <strong>Disclaimer:</strong> set may include accidental genre changes, unexplained airhorns,
+            and emotional support bass.
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="orb orb--a"></div>
+          <div class="orb orb--b"></div>
+
+          <div class="card card--big">
+            <div class="card__top">
+              <span class="badge">LIVE MIX</span>
+              <span class="chip">Neon Disaster Tour</span>
+            </div>
+
+            <div class="visual">
+              <svg viewBox="0 0 800 260" role="img" aria-label="">
+                <path class="wave" d="M0,165 C70,70 130,240 200,155 C270,70 330,240 400,155 C470,70 530,240 600,155 C670,70 730,240 800,155" />
+                <path class="wave wave2" d="M0,145 C70,50 130,220 200,135 C270,50 330,220 400,135 C470,50 530,220 600,135 C670,50 730,220 800,135" />
+              </svg>
+              <div class="eq">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="card__bottom">
+              <div class="meta">
+                <strong>Set highlights</strong>
+                <p>“Oops I dropped the chorus” • “Bass apology” • “The tempo incident”</p>
+              </div>
+              <a class="pill" href="./media.html">Play samples</a>
+            </div>
+          </div>
+
+          <div class="card card--small">
+            <strong>Next up</strong>
+            <p id="nextShow">Loading…</p>
+            <a class="link" href="./shows.html">See all dates →</a>
+          </div>
+
+          <div class="card card--small">
+            <strong>What people say</strong>
+            <p class="quote" id="quote">“A spiritual experience. Mostly fear.”</p>
+            <button class="linkbtn" id="newQuote">New quote</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="section__head">
+        <h2>Pick your damage</h2>
+        <p>Packages for clubs, house parties, corporate events, and “please don’t tell HR.”</p>
+      </div>
+
+      <div class="grid3">
+        <article class="pricing">
+          <h3>Minimal Harm</h3>
+          <p class="price">$199<span>/event</span></p>
+          <ul>
+            <li>30–45 min set</li>
+            <li>One (1) tasteful airhorn</li>
+            <li>Apology included</li>
+          </ul>
+          <a class="btn btn--ghost" href="./contact.html">Request</a>
+        </article>
+
+        <article class="pricing pricing--hot">
+          <div class="badgeTop">Most regrettable</div>
+          <h3>Main Character</h3>
+          <p class="price">$499<span>/event</span></p>
+          <ul>
+            <li>60–90 min set</li>
+            <li>“Accidental” genre shift</li>
+            <li>Hype mic moments</li>
+          </ul>
+          <a class="btn btn--primary" href="./contact.html">Book</a>
+        </article>
+
+        <article class="pricing">
+          <h3>Total Chaos</h3>
+          <p class="price">$999<span>/event</span></p>
+          <ul>
+            <li>2–3 hour set</li>
+            <li>Custom intro sting</li>
+            <li>One tempo incident (guaranteed)</li>
+          </ul>
+          <a class="btn btn--ghost" href="./contact.html">Summon</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="banner">
+        <div>
+          <h3>Drop your email. I’ll only spam you with bangers (and mistakes).</h3>
+          <p>Get new mixes, show dates, and the occasional apology letter.</p>
+        </div>
+        <form class="formrow" id="subscribeForm">
+          <label class="srOnly" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <p class="tiny">This is a static GitHub Pages site — the form is “fake” by default. See <a class="link" href="./contact.html">Contact</a> for real options.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <strong class="footer__brand">World’s Worst DJ</strong>
+        <p class="tiny">© <span id="year"></span> · Made with questionable taste.</p>
+      </div>
+      <div class="footer__links">
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./contact.html">Bookings</a>
+      </div>
+      <div class="footer__social">
+        <a class="pill" href="#" data-disabled>Instagram</a>
+        <a class="pill" href="#" data-disabled>SoundCloud</a>
+        <a class="pill" href="#" data-disabled>YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
