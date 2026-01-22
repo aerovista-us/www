@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About · World’s Worst DJ</title>
+  <meta name="description" content="About the World’s Worst DJ. The origin story, the mission, the questionable methods." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark">WWDJ</span>
+        <span class="brand__text"><strong>World’s Worst DJ</strong><em>low skill · high confidence</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./shows.html">Shows</a>
+        <a class="nav__link" href="./media.html">Media</a>
+        <a class="nav__link is-active" href="./about.html">About</a>
+        <a class="nav__link nav__cta" href="./contact.html">Book me</a>
+      </nav>
+      <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="iconbtn__bars"></span>
+      </button>
+    </div>
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="wrap mobileNav__inner">
+        <a href="./index.html">Home</a>
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./about.html">About</a>
+        <a class="pill" href="./contact.html">Book me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="section__head">
+      <h1>About</h1>
+      <p>Some DJs chase perfection. I chase the moment right before the crowd realizes it’s too late.</p>
+    </div>
+
+    <div class="grid2">
+      <article class="card">
+        <h2>The origin story</h2>
+        <p>
+          It started with a borrowed controller, one blown speaker, and a dream: “What if I committed to the bit… forever?”
+          Since then: weddings, basements, clubs, and at least one corporate retreat where I was asked to “please stop.”
+        </p>
+        <p class="tiny">
+          Translation: I’m a comedic performance DJ with real chops *sometimes* — built for energy, crowd work, and chaotic fun.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>What you actually get</h2>
+        <ul class="check">
+          <li>High-energy set design (clean where it matters)</li>
+          <li>Funny, branded moments (“World’s Worst” gimmick)</li>
+          <li>Requests handled respectfully… and occasionally ignored</li>
+          <li>Optional mic hype</li>
+          <li>A show people remember</li>
+        </ul>
+        <a class="btn btn--primary" href="./contact.html">Book me</a>
+      </article>
+    </div>
+
+    <section class="card section">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Are you actually bad?</summary>
+          <p>Not always. The “worst” is the brand — the performance is real. Think: comedy + energy + club polish.</p>
+        </details>
+        <details>
+          <summary>What genres?</summary>
+          <p>Trap, hip-hop, EDM, throwbacks, jersey, baile funk, pop chaos. We tailor to the crowd.</p>
+        </details>
+        <details>
+          <summary>Do you bring gear?</summary>
+          <p>Depends on the venue. I can be plug-and-play or full setup. Put it in the booking notes.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <strong class="footer__brand">World’s Worst DJ</strong>
+        <p class="tiny">© <span id="year"></span> · Made with questionable taste.</p>
+      </div>
+      <div class="footer__links">
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./contact.html">Bookings</a>
+      </div>
+      <div class="footer__social">
+        <a class="pill" href="#" data-disabled>Instagram</a>
+        <a class="pill" href="#" data-disabled>SoundCloud</a>
+        <a class="pill" href="#" data-disabled>YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

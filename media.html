@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media · World’s Worst DJ</title>
+  <meta name="description" content="Listen to mixes and view clips. Replace placeholder audio with your own links." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark">WWDJ</span>
+        <span class="brand__text"><strong>World’s Worst DJ</strong><em>low skill · high confidence</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./shows.html">Shows</a>
+        <a class="nav__link is-active" href="./media.html">Media</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link nav__cta" href="./contact.html">Book me</a>
+      </nav>
+      <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="iconbtn__bars"></span>
+      </button>
+    </div>
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="wrap mobileNav__inner">
+        <a href="./index.html">Home</a>
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./about.html">About</a>
+        <a class="pill" href="./contact.html">Book me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="section__head">
+      <h1>Media</h1>
+      <p>
+        This page is set up for: embedded videos + audio players.
+        If you want, I can swap these placeholders for real SoundCloud/YouTube embeds.
+      </p>
+    </div>
+
+    <div class="grid2">
+      <section class="card">
+        <h2>Quick clips</h2>
+        <div class="mediaGrid">
+          <div class="vid" data-disabled>
+            <div class="vid__thumb">Video slot</div>
+            <div class="vid__meta">
+              <strong>Tempo Incident (Live)</strong>
+              <span>Replace with YouTube/IG embed</span>
+            </div>
+          </div>
+          <div class="vid" data-disabled>
+            <div class="vid__thumb">Video slot</div>
+            <div class="vid__meta">
+              <strong>Genre Shift Speedrun</strong>
+              <span>Replace with YouTube/IG embed</span>
+            </div>
+          </div>
+        </div>
+        <p class="tiny">Tip: GitHub Pages supports iframes fine — you just paste embed code.</p>
+      </section>
+
+      <section class="card">
+        <h2>Audio crimes</h2>
+
+        <div class="track">
+          <div class="track__head">
+            <strong>Basement Bounce (demo)</strong>
+            <span class="chip">1:12</span>
+          </div>
+          <audio controls preload="none">
+            <source src="" type="audio/mpeg" />
+          </audio>
+          <p class="tiny">Drop an MP3 in your repo and set the <code>src</code> (or use a hosted link).</p>
+        </div>
+
+        <div class="track">
+          <div class="track__head">
+            <strong>Neon Regret (demo)</strong>
+            <span class="chip">0:58</span>
+          </div>
+          <audio controls preload="none">
+            <source src="" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <div class="track">
+          <div class="track__head">
+            <strong>Apology Bass (demo)</strong>
+            <span class="chip">1:35</span>
+          </div>
+          <audio controls preload="none">
+            <source src="" type="audio/mpeg" />
+          </audio>
+        </div>
+      </section>
+    </div>
+
+    <section class="card section">
+      <h2>Link hub</h2>
+      <div class="grid3">
+        <a class="hub" href="#" data-disabled>
+          <strong>SoundCloud</strong><span>paste your profile link</span>
+        </a>
+        <a class="hub" href="#" data-disabled>
+          <strong>YouTube</strong><span>paste your channel link</span>
+        </a>
+        <a class="hub" href="#" data-disabled>
+          <strong>Instagram</strong><span>paste your handle link</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <strong class="footer__brand">World’s Worst DJ</strong>
+        <p class="tiny">© <span id="year"></span> · Made with questionable taste.</p>
+      </div>
+      <div class="footer__links">
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./contact.html">Bookings</a>
+      </div>
+      <div class="footer__social">
+        <a class="pill" href="#" data-disabled>Instagram</a>
+        <a class="pill" href="#" data-disabled>SoundCloud</a>
+        <a class="pill" href="#" data-disabled>YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

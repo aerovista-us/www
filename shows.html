@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shows · World’s Worst DJ</title>
+  <meta name="description" content="Upcoming dates and past damage reports." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark">WWDJ</span>
+        <span class="brand__text"><strong>World’s Worst DJ</strong><em>low skill · high confidence</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link is-active" href="./shows.html">Shows</a>
+        <a class="nav__link" href="./media.html">Media</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link nav__cta" href="./contact.html">Book me</a>
+      </nav>
+      <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="iconbtn__bars"></span>
+      </button>
+    </div>
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="wrap mobileNav__inner">
+        <a href="./index.html">Home</a>
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./about.html">About</a>
+        <a class="pill" href="./contact.html">Book me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="section__head">
+      <h1>Shows</h1>
+      <p>Upcoming dates + past incidents. Replace these with your real bookings in <code>assets/app.js</code>.</p>
+    </div>
+
+    <div class="grid2">
+      <section class="card">
+        <h2>Upcoming</h2>
+        <div id="showsUpcoming" class="list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Past damage reports</h2>
+        <div id="showsPast" class="list"></div>
+      </section>
+    </div>
+
+    <section class="card section">
+      <h2>Promoter kit</h2>
+      <div class="grid3">
+        <div class="kit">
+          <strong>One-liner</strong>
+          <p>“World’s Worst DJ — the set is clean, the brand is chaos.”</p>
+          <button class="pill" data-copy="World’s Worst DJ — the set is clean, the brand is chaos.">Copy</button>
+        </div>
+        <div class="kit">
+          <strong>Short bio</strong>
+          <p>Comedic performance DJ with real energy, crowd work, and genre-hopping mayhem.</p>
+          <button class="pill" data-copy="Comedic performance DJ with real energy, crowd work, and genre-hopping mayhem.">Copy</button>
+        </div>
+        <div class="kit">
+          <strong>Press note</strong>
+          <p>Perfect for nights that want a “show,” not just background music.</p>
+          <button class="pill" data-copy="Perfect for nights that want a “show,” not just background music.">Copy</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <strong class="footer__brand">World’s Worst DJ</strong>
+        <p class="tiny">© <span id="year"></span> · Made with questionable taste.</p>
+      </div>
+      <div class="footer__links">
+        <a href="./shows.html">Shows</a>
+        <a href="./media.html">Media</a>
+        <a href="./contact.html">Bookings</a>
+      </div>
+      <div class="footer__social">
+        <a class="pill" href="#" data-disabled>Instagram</a>
+        <a class="pill" href="#" data-disabled>SoundCloud</a>
+        <a class="pill" href="#" data-disabled>YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
